@@ -1,5 +1,9 @@
+---
+import Navigation from "./Navigation.astro";
+---
+
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
@@ -7,8 +11,14 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Karim Biscaiburo</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&display=swap" rel="stylesheet">
+  </head>
 	</head>
-	<body>
+	<body class="bg-black text-white">
+		<Navigation />
 		<slot />
 	</body>
 </html>

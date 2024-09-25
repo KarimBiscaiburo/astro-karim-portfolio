@@ -1,0 +1,93 @@
+---
+import { Image } from "astro:assets";
+
+import dataObjectIcon from "../img/data-object-icon.png";
+import personalDevelopmentIcon from "../img/personal-development-icon.png";
+import walletIcon from "../img/wallet-icon.png";
+import bankIcon from "../img/bank-icon.png";
+import linkedinLogo from "../img/linkedin-logo.png";
+import githubLogo from "../img/github-logo.png";
+import downloadIcon from "../img/download-icon.png";
+import CV from "../img/Currículum Vitae Karim Biscaiburo ES-P.pdf";
+import meImage from "../img/me-without-background.webp";
+import LinksFrontPage from "../components/LinksFrontPage.astro";
+import DetailsFrontPage from "../components/DetailsFrontPage.astro";
+---
+
+<div class="min-[1400px]:h-[550px] flex gap-5 text-center justify-between flex-col-reverse items-center min-[1400px]:items-end min-[1400px]:flex-row min-[1400px]:text-start">
+    <div class="">
+        <h1 class="text-5xl mb-3 min-[1400px]:text-[64px]">Karim Biscaiburo</h1>
+        <h2 class="text-4xl mb-7 min-[1400px]:text-5xl"><span class="bg-gradient-to-r from-darken-cian to-cian">Full Stack</span> Developer</h2>
+
+        <div class="flex flex-wrap gap-[10px] max-w-[630px] justify-center">
+            
+            <div class="bg-dark-gray w-full max-w-[470px] h-[125px] p-[15px] rounded-md flex items-center">
+                <p class="text-3xl min-[1400px]:text-4xl">Developing solutions and making them real</p>
+            </div>
+
+            <DetailsFrontPage>
+                <p class="text-4xl font-bold"><span>+3</span></p>
+                <p class="text-lg font-bold">Years Development</p>
+            </DetailsFrontPage>
+
+            <DetailsFrontPage>
+                <p class="text-lg font-bold">Web Development</p>
+                <Image class={"w-10 h-10"} src={dataObjectIcon} alt="data-object-icon" />
+            </DetailsFrontPage>
+
+            <DetailsFrontPage>
+                <p class="text-lg font-bold">Personal Develpment</p>
+                <Image class={"w-10 h-10"} src={personalDevelopmentIcon} alt="" />
+            </DetailsFrontPage>
+
+            <DetailsFrontPage>
+                <p class="text-lg font-bold">Personal Finance</p>
+                <Image class={"w-10 h-10"} src={walletIcon} alt="wallet-icon" />
+            </DetailsFrontPage>
+            
+            <DetailsFrontPage>
+                <p class="text-lg font-bold">Economy</p>
+                <Image class={"w-10 h-10"} src={bankIcon} alt="bank-icon" />
+            </DetailsFrontPage>
+
+        </div>
+        <div class="flex gap-4 mt-4 flex-wrap justify-center min-[1400px]:justify-start">
+
+            <LinksFrontPage url="https://www.linkedin.com/in/karim-biscaiburo/">
+                <p>Linkedin</p>
+                <Image class={"w-7 h-7"} src={linkedinLogo} alt="linkedin-logo" />
+            </LinksFrontPage>
+
+            <LinksFrontPage url="https://github.com/KarimBiscaiburo">
+                <p>Github</p>
+                <Image class={"w-7 h-7"} src={githubLogo} alt="github-logo" />
+            </LinksFrontPage>
+
+            <LinksFrontPage url={CV}>
+                <p>Resume</p>
+                <Image class={"w-6 h-6"} src={downloadIcon} alt="download-icon" />
+            </LinksFrontPage>
+
+        </div>
+    </div>
+    <div class="">
+        <Image class={"max-w-[460px] max-h-[550px] h-full w-full"} src={meImage} alt="me-without-background" />
+    </div>
+</div>
+<span class="divisor"></span>
+
+<style>
+.divisor {
+    display: block;
+    margin-top: 40px;
+    height: 4px;
+    width: 75%;
+    background-image: linear-gradient(to right, #515151 60%, transparent 0%);
+    background-position: left;
+    background-size: 40px 4px;
+}
+
+@media (max-width: 1400px) {
+    .divisor {margin: 40px auto;}
+}
+</style>

@@ -1,0 +1,12 @@
+---
+interface Props {
+    logo: ImageMetadata,
+    texto: string,
+    titulo: string
+}
+
+import { Image } from "astro:assets";
+const {logo, texto, titulo} = Astro.props
+---
+
+<Image loading={"lazy"} class={"hover:scale-125 transition h-14 w-14 xl:h-16 xl:w-16"} src={logo} alt={texto} title={titulo}/>

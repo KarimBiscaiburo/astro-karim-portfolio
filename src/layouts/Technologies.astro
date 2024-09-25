@@ -1,0 +1,97 @@
+---
+import { Image } from "astro:assets";
+import CardTechnologie from "../components/CardTechnologie.astro";
+import ImageTech from "../components/ImageTech.astro";
+
+// Languages
+import htmlLogo from "../img/html-logo.png";
+import cssLogo from "../img/css-logo.png";
+import javascriptLogo from "../img/javascript-logo.png";
+import typescriptLogo from "../img/typeScript-logo.png";
+import pythonLogo from "../img/python-logo.png";
+import cLogo from "../img/c-logo.png";
+import phpLogo from "../img/php-logo.png";
+
+// Technologies
+import nextLogo from "../img/nextjs-logo.png";
+import dockerLogo from "../img/docker-logo.png";
+import nodeLogo from "../img/nodejs-logo.png";
+import expressLogo from "../img/express-logo.png";
+import reactLogo from "../img/reactjs-logo.png";
+import astroLogo from "../img/astro-logo.png";
+import sassLogo from "../img/sass-logo.png";
+import tailwindcssLogo from "../img/tailwindcss-logo.png";
+import typeORMLogo from "../img/typeORM-logo.png";
+
+// Data Bases
+import mySQLLogo from "../img/mysql-logo.png";
+import postgresSQL from "../img/postgressql-logo.png";
+import mongoDB from "../img/mongodb-logo.png";
+
+// Metodologies and Organization
+import scrumLogo from "../img/scrum-logo.png";
+import trelloLogo from "../img/trello-logo.png";
+
+// Version Control
+import gitLogo from "../img/git-logo.png";
+import gitHubLogo from "../img/github-logo.png";
+
+// Others
+import googleSearchConsoleLogo from "../img/google-search-console-logo.png";
+import googleAdsenseLogo from "../img/google-adsense-logo.png";
+import googleAnalyticsLogo from "../img/google-analytics-logo.png";
+import wordpressLogo from "../img/wordpress-logo.png";
+import figmaLogo from "../img/figma-logo.png";
+
+---
+
+<section class="mt-24">
+    <h2 class="text-4xl md:text-5xl font-bold text-center mb-20">Technologies I have worked with</h2>
+    <div class="flex flex-wrap gap-12 xl:gap-24 justify-center">
+        <CardTechnologie title="Languages">
+            <ImageTech logo={htmlLogo} texto={"html-logo"} titulo={"HTML"}/>
+            <ImageTech logo={cssLogo} texto={"css-logo"} titulo={"CSS"}/>
+            <ImageTech logo={javascriptLogo} texto={"javascript-logo"} titulo={"Javascript"}/>
+            <ImageTech logo={typescriptLogo} texto={"TypeScript-logo"} titulo={"TypeScript"}/>
+            <ImageTech logo={pythonLogo} texto={"Python-logo"} titulo={"Python"}/>
+            <ImageTech logo={cLogo} texto={"C-logo"} titulo={"C"}/>
+            <ImageTech logo={phpLogo} texto={"PHP-logo"} titulo={"PHP"}/>
+        </CardTechnologie>
+    
+        <CardTechnologie title="Technologies">
+            <ImageTech logo={nextLogo} texto={"next-logo"} titulo={"NextJs"}/>
+            <ImageTech logo={dockerLogo} texto={"docker-logo"} titulo={"Docker"}/>
+            <ImageTech logo={nodeLogo} texto={"nodejs-logo"} titulo={"NodeJs"}/>
+            <ImageTech logo={expressLogo} texto={"expressjs-logo"} titulo={"ExpressJs"}/>
+            <ImageTech logo={reactLogo} texto={"reactjs-logo"} titulo={"ReactJs"}/>
+            <ImageTech logo={astroLogo} texto={"astro"} titulo={"Astro"}/>
+            <ImageTech logo={sassLogo} texto={"sass-logo"} titulo={"SASS"}/>
+            <ImageTech logo={tailwindcssLogo} texto={"tailwindcss-logo"} titulo={"TailwindCSS"}/>
+            <ImageTech logo={typeORMLogo} texto={"typeORM-logo"} titulo={"TypeORM"}/>
+        </CardTechnologie>
+    
+        <CardTechnologie title="Data Bases">
+            <ImageTech logo={mySQLLogo} texto={"mysql-logo"} titulo={"MySQL"}/>
+            <ImageTech logo={postgresSQL} texto={"postgresSQL-logo"} titulo={"PostgresSQL"}/>
+            <ImageTech logo={mongoDB} texto={"mongodb-logo"} titulo={"MongoDB"}/>
+        </CardTechnologie>
+    
+        <CardTechnologie title="Metofologies and Organization">
+            <ImageTech logo={scrumLogo} texto={"scrum-logo"} titulo={"Scrum"}/>
+            <ImageTech logo={trelloLogo} texto={"trello-logo"} titulo={"Trello"}/>
+        </CardTechnologie>
+    
+        <CardTechnologie title="Version Control">
+            <ImageTech logo={gitLogo} texto={"git-logo"} titulo={"Git"}/>
+            <ImageTech logo={gitHubLogo} texto={"gitHub-logo"} titulo={"GitHub"}/>
+        </CardTechnologie>
+    
+        <CardTechnologie title="Others">
+            <ImageTech logo={googleSearchConsoleLogo} texto={"google-search-console-logo"} titulo={"Google Search Console"}/>
+            <ImageTech logo={googleAdsenseLogo} texto={"google-adsense-logo"} titulo={"Google Adsense"}/>
+            <ImageTech logo={googleAnalyticsLogo} texto={"google-analytics-logo"} titulo={"Google Analytics"}/>
+            <ImageTech logo={wordpressLogo} texto={"wordpress-logo"} titulo={"Wordpress"}/>
+            <ImageTech logo={figmaLogo} texto={"figma-logo"} titulo={"Figma"}/>
+        </CardTechnologie>
+    </div>
+</section>
