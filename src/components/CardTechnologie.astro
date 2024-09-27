@@ -6,8 +6,8 @@ interface Props {
 const {title} = Astro.props;
 ---
 
-<div class="max-w-[328px]">
-    <h3 class="text-3xl md:text-4xl font-bold text-center mb-10">{title}</h3>
+<div class="max-w-[328px] md:w-[328px]">
+    <h3 class="text-3xl md:text-4xl font-bold text-center mb-10 text-extra-light-gray">{title}</h3>
     <div class="flex gap-6 flex-wrap justify-center">
         <slot />
     </div>
