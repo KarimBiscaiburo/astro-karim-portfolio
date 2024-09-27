@@ -1,24 +1,19 @@
 ---
+import NavLink from "../components/NavLink.astro";
+
 
 ---
 
 <header class="bg-nav_background sticky top-0 backdrop-blur">
     <nav class="p-5">
-        <ul class="flex gap-16 justify-center">
-            <li class="text-3xl hover:text-cian transition ease-in-out duration-150">
-                <a href="#about">About</a>
-            </li>
-            <li class="text-3xl hover:text-cian transition ease-in-out duration-150">
-                <a href="#experience">Experience</a>
-            </li>
-            <li class="text-3xl hover:text-cian transition ease-in-out duration-150">
-                <a href="#projects">Projects</a>
-            </li>
-            <li class="text-3xl hover:text-cian transition ease-in-out duration-150">
-                <a href="#education">Education</a>
-            </li>
-            <li class="text-3xl hover:text-cian transition ease-in-out duration-150">
-                <a href="#contact">Contact</a>
+        <ul class="flex gap-3 min-[550px]:gap-6 min-[700px]:gap-10 lg:gap-16 justify-center">
+
+            <NavLink text="About" ref="#about" />
+            <NavLink text="Experience" ref="#experience" />
+            <NavLink text="Projects" ref="#projects" />
+            <NavLink text="Education" ref="#education" />
+            <NavLink text="Contact" ref="#contact" />
+
             </li>
         </ul>
     </nav>
