@@ -1,0 +1,37 @@
+---
+interface Props {
+    title: string,
+    subtitle: string,
+    date: string,
+    description: string,
+    logo: ImageMetadata,
+    site?: string
+}
+
+const {title, subtitle, date, description, logo, site} = Astro.props;
+
+import { Image } from 'astro:assets';
+
+import webIcon from "../img/web-icon.png";
+---
+
+<div class="py-7 px-6 rounded-lg bg-light-dark border-dark-gray border-2 max-w-[800px] shadow-[0_0_8px_2px] shadow-light-dark-gray mx-auto hover:scale-105 transition duration-500">
+    <div class="flex justify-between items-center flex-wrap">
+        <div class="flex gap-10 items-center mb-3">
+            <Image class={"h-20 w-20 object-contain"} src={logo} alt={"company-logo-experience"}/>
+            <div>
+                <h3 class="font-bold text-xl">{title}</h3>
+                <h4 class="font-bold text-lg">{subtitle}</h4>
+            </div>
+        </div>
+        <p class="text-md text-light-gray">{date}</p>
+    </div>
+    <p class="text-lg text-extra-light-gray ">{description}</p>
+    { site ?
+            <a href={site} target="_blank" rel="noopener noreferrer" class="flex gap-3 items-center mt-2 bg-cian w-fit px-3 py-1 rounded-lg hover:scale-110 transition duration-500">
+                <Image src={webIcon} alt={"web-icon"} class={"w-6 h-6"}/>
+                <p class="text-sm text-light-dark font-bold">Visit</p>
+            </a>
+            :
+            null}
+</div>

@@ -1,0 +1,29 @@
+---
+import CardExperience from "../components/CardExperience.astro";
+
+import chemvalsaLogo from "../img/chemvalsa-logo.png";
+import trainitLogo from "../img/trainit-logo.png";
+---
+
+<main class="pt-20" id="experience">
+    <h2 class="text-4xl md:text-5xl font-bold text-center mb-20">Experience</h2>
+
+    <div class="flex flex-col gap-6">
+        <CardExperience 
+            title="Programa TrainIT" 
+            subtitle="Project Manager" 
+            date="09/2024 - Present" 
+            description="Volunteer in the TrainIT program as a Project Manager. TrainIT is a free educational program and job simulation community, which offers experience through participation in non-profit multidisciplinary MVPs, accompanied by seniors in different work niches. The goal is for participants to expand their portfolios and improve their professional profile vis-à-vis active companies in the market."
+            logo={trainitLogo}
+        />
+
+        <CardExperience 
+            title="ChemvalSA" 
+            subtitle="Freelance" 
+            date="01/2024 - 03/2024" 
+            description="I created a website for a company with the aim of giving visibility to their services and acquiring potential clients. With a focus on SEO, I used React.js and Astro with its dynamic islands for interactivity."
+            logo={chemvalsaLogo}
+            site="https://chemval.com.ar/"
+        />
+    </div>
+</div>
