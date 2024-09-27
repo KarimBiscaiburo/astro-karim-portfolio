@@ -1,0 +1,32 @@
+---
+interface Props {
+    title: string,
+    subtitle: string,
+    description: string,
+    icons: ImageMetadata[],
+    date: string
+}
+const { title, subtitle, description, icons, date } = Astro.props
+
+import { Image } from 'astro:assets'
+---
+
+
+<div class="p-6 rounded bg-dark-gray shadow-[0_0_8px_2px] shadow-light-dark-gray max-w-[400px] flex flex-col justify-between">
+    <div>
+        <h3 class="text-2xl font-bold md:text-3xl text-center mb-5">{title}</h3>
+        <h4 class="text-xl md:text-2xl text-center font-bold mb-5">{subtitle}</h4>
+        <p class="text-lg md:text-lg text-center mb-5 text-extra-light-gray">{description}</p>
+    </div>
+
+    <div class="flex items-center justify-between gap-3">
+        <div class="flex gap-2 flex-wrap">
+            {icons.map(icon => {
+                return <Image src={icon} alt={"technologie-icon"} class={"h-10 w-10"}/>
+            })}
+        </div>
+
+        <p class="text-base text-light-gray">{date}</p>
+    </div>
+
+</div>

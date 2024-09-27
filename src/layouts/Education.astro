@@ -1,0 +1,61 @@
+---
+import CardEducation from "../components/CardEducation.astro";
+
+import cLogo from "../img/c-logo.png";
+
+import htmlLogo from "../img/html-logo.png";
+import cssLogo from "../img/css-logo.png";
+import javascriptLogo from "../img/javascript-logo.png";
+import mysqlLogo from "../img/mysql-logo.png";
+import phpLogo from "../img/php-logo.png";
+import nodeLogo from "../img/nodejs-logo.png";
+import expressLogo from "../img/express-logo.png";
+import reactLogo from "../img/reactjs-logo.png";
+import nextLogo from "../img/nextjs-logo.png";
+import dockerLogo from "../img/docker-logo.png";
+import mongodbLogo from "../img/mongodb-logo.png";
+import typeORMLogo from "../img/typeORM-logo.png";
+import typescriptLogo from "../img/typeScript-logo.png";
+import gitLogo from "../img/git-logo.png";
+import astroLogo from "../img/astro-logo.png";
+
+---
+
+<section>
+    <h2 class="text-4xl md:text-5xl font-bold text-center mb-20 mt-20">Education</h2>
+
+    <div class="flex flex-wrap gap-5 justify-center">
+        <CardEducation
+            title="UTN"
+            subtitle="Tecnicatura en Programación"
+            description="University technical degree where I learned the basic concepts of programming. I started programming in C, using algorithms and using logic."
+            icons={[cLogo]}
+            date="In progress"
+        />
+
+        <CardEducation
+        title="Autodidact"
+        subtitle="Variety of Technologies"
+        description="My self-learning never stops. I have adopted a mindset of continuous improvement, exploring frameworks and tools, always seeking to optimize my skills in full-stack development."
+        icons={[dockerLogo, nextLogo, typeORMLogo, typescriptLogo, astroLogo, gitLogo]}
+        date="Present"
+        />
+
+        <CardEducation
+            title="Udemy"
+            subtitle="Desarrollo Web Completo"
+            description="Full Stack course with projects to develop a complete application and know how to connect the Front End with the Back End"
+            icons={[htmlLogo, cssLogo, javascriptLogo, mysqlLogo, phpLogo]}
+            date="August - 2024"
+        />
+
+        <CardEducation
+            title="Udemy"
+            subtitle="JavaScript Moderno"
+            description="Complete course on the language. From the basics to the most advanced concepts."
+            icons={[reactLogo, javascriptLogo, nodeLogo, expressLogo, mongodbLogo]}
+            date="July - 2024"
+        />
+    </div>
+
+</section>
