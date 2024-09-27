@@ -1,3 +1,49 @@
+---
+import CardProjects from "../components/CardProjects.astro";
+
+import nextLogo from "../img/nextjs-logo.png";
+import sassLogo from "../img/sass-logo.png";
+import javascriptLogo from "../img/javascript-logo.png";
+import mysqlLogo from "../img/mysql-logo.png";
+import htmlLogo from "../img/html-logo.png";
+import cssLogo from "../img/css-logo.png";
+import astroLogo from "../img/astro-logo.png";
+import tailwindLogo from "../img/tailwindcss-logo.png";
+import reactLogo from "../img/reactjs-logo.png";
+import nodeLogo from "../img/nodejs-logo.png";
+import wordpressLogo from "../img/wordpress-logo.png";
+import googleSearchConsoleLogo from "../img/google-search-console-logo.png";
+import googleAnalyticsLogo from "../img/google-analytics-logo.png";
+import googleAdsense from "../img/google-adsense-logo.png";
+
+---
+
 <div class="pt-20" id="projects">
     <h2 class="text-4xl md:text-5xl font-bold text-center mb-20">Projects</h2>
+
+    <div class="flex flex-wrap justify-center gap-10">
+        <CardProjects 
+            title="Website for a Hairdresser"
+            description="Software designed to request appointments, send notifications, and manage reserved appointments or add new ones. It includes an admin panel, user authentication, a client panel, and email sending features."
+            technologies={[nextLogo, sassLogo, javascriptLogo, mysqlLogo]}
+        />
+
+        <CardProjects 
+            title="Landing Page Designs"
+            description="Create templates in order to put my knowledge into practice and experiment with new ways of doing things by developing possible templates that can be put to real use."
+            technologies={[htmlLogo, cssLogo, astroLogo, tailwindLogo]}
+        />
+
+        <CardProjects 
+            title="Real Estate"
+            description="A website with an administrative panel for managing properties for sale. A project made from one of the courses but adapted to other technologies to add more difficulty."
+            technologies={[reactLogo, mysqlLogo, sassLogo, javascriptLogo, nodeLogo]}
+        />
+
+        <CardProjects 
+            title="Amazon Referrals Page"
+            description="I created a page with WordPress focused on SEO to generate traffic within the site, aiming to earn profits through Amazon referrals."
+            technologies={[wordpressLogo, googleAdsense, googleAnalyticsLogo, googleSearchConsoleLogo]}
+        />
+    </div>
 </div>
