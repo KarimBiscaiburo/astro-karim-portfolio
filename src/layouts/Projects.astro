@@ -4,6 +4,7 @@ import CardProjects from "../components/CardProjects.astro";
 import nextLogo from "../img/nextjs-logo.png";
 import sassLogo from "../img/sass-logo.png";
 import javascriptLogo from "../img/javascript-logo.png";
+import typescriptLogo from "../img/typeScript-logo.png"
 import mysqlLogo from "../img/mysql-logo.png";
 import htmlLogo from "../img/html-logo.png";
 import cssLogo from "../img/css-logo.png";
@@ -22,6 +23,12 @@ import googleAdsense from "../img/google-adsense-logo.png";
     <h2 class="text-4xl md:text-5xl font-bold text-center mb-20">Projects</h2>
 
     <div class="flex flex-wrap justify-center gap-10">
+        <CardProjects 
+            title="Cloudinary Hackathon 2024"
+            description='Its a Halloween-themed "Argentinian" game where, using Cloudinarys AI-powered image editing services, you can customize the game environment. The goal is to collect as many candies as possible to advance as far as you can.'
+            technologies={[nextLogo, cssLogo, typescriptLogo]}
+        />
+
         <CardProjects 
             title="Website for a Hairdresser"
             description="Software designed to request appointments, send notifications, and manage reserved appointments or add new ones. It includes an admin panel, user authentication, a client panel, and email sending features."
