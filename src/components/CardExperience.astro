@@ -28,10 +28,16 @@ import webIcon from "../img/web-icon.png";
     </div>
     <p class="text-lg text-extra-light-gray ">{description}</p>
     { site ?
-            <a href={site} target="_blank" rel="noopener noreferrer" class="flex gap-3 items-center mt-2 bg-cian w-fit px-3 py-1 rounded-lg hover:scale-110 transition duration-500">
+            <a href={site} target="_blank" rel="noopener noreferrer" class="btnLink flex gap-3 items-center mt-2 w-fit px-3 py-1 rounded-lg hover:scale-110 transition duration-500">
                 <Image src={webIcon} alt={"web-icon"} class={"w-6 h-6"}/>
-                <p class="text-sm text-light-dark font-bold">Visit</p>
+                <p class="text-base font-bold">Visit</p>
             </a>
             :
             null}
 </div>
+
+<style>
+    .btnLink {
+        background: linear-gradient(to right, #1aa194, rgb(4, 115, 188));
+    }
+</style>

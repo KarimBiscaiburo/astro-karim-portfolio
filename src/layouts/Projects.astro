@@ -17,6 +17,12 @@ import googleSearchConsoleLogo from "../img/google-search-console-logo.png";
 import googleAnalyticsLogo from "../img/google-analytics-logo.png";
 import googleAdsense from "../img/google-adsense-logo.png";
 
+
+import hackathonCloudinary from "../img/hackathon_cloudinary.png";
+import bienesRaices from "../img/bienes_raices.png";
+import peluqueriaEma from "../img/peluqueria_ema.png";
+import landingPages from "../img/landing_pages.png";
+import amazonReferidos from "../img/amazon_referidos.png";
 ---
 
 <div class="pt-20" id="projects">
@@ -24,33 +30,45 @@ import googleAdsense from "../img/google-adsense-logo.png";
 
     <div class="flex flex-wrap justify-center gap-10">
         <CardProjects 
+            imgProject={hackathonCloudinary}
             title="Cloudinary Hackathon 2024"
             description='Its a Halloween-themed "Argentinian" game where, using Cloudinarys AI-powered image editing services, you can customize the game environment. The goal is to collect as many candies as possible to advance as far as you can.'
             technologies={[nextLogo, cssLogo, typescriptLogo]}
+            linkProject="https://cloudinary-hackaton-2024.vercel.app/"
+            linkRepository="https://github.com/KarimBiscaiburo/cloudinary-hackaton-2024"
         />
-
+         
         <CardProjects 
+            imgProject={peluqueriaEma}
             title="Website for a Hairdresser"
             description="Software designed to request appointments, send notifications, and manage reserved appointments or add new ones. It includes an admin panel, user authentication, a client panel, and email sending features."
             technologies={[nextLogo, sassLogo, javascriptLogo, mysqlLogo]}
+            linkRepository="https://github.com/KarimBiscaiburo/Emanuel-Duarte-Peluqueria"
         />
 
         <CardProjects 
-            title="Landing Page Designs"
-            description="Create templates in order to put my knowledge into practice and experiment with new ways of doing things by developing possible templates that can be put to real use."
-            technologies={[htmlLogo, cssLogo, astroLogo, tailwindLogo]}
-        />
-
-        <CardProjects 
+            imgProject={bienesRaices}
             title="Real Estate"
             description="A website with an administrative panel for managing properties for sale. A project made from one of the courses but adapted to other technologies to add more difficulty."
             technologies={[reactLogo, mysqlLogo, sassLogo, javascriptLogo, nodeLogo]}
+            linkRepository="https://github.com/KarimBiscaiburo/Bienes-Raices-CRUD"
         />
 
+        
+        <CardProjects
+            imgProject={landingPages} 
+            title="Landing Page Designs"
+            description="Create templates in order to put my knowledge into practice and experiment with new ways of doing things by developing possible templates that can be put to real use."
+            technologies={[htmlLogo, cssLogo, astroLogo, tailwindLogo]}
+            linkRepository="https://github.com/KarimBiscaiburo/Landing-Pages"
+        />
+        
         <CardProjects 
+            imgProject={amazonReferidos}
             title="Amazon Referrals Page"
             description="I created a page with WordPress focused on SEO to generate traffic within the site, aiming to earn profits through Amazon referrals."
             technologies={[wordpressLogo, googleAdsense, googleAnalyticsLogo, googleSearchConsoleLogo]}
         />
+
     </div>
 </div>
