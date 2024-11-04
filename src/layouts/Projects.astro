@@ -6,8 +6,6 @@ import sassLogo from "../img/sass-logo.png";
 import javascriptLogo from "../img/javascript-logo.png";
 import typescriptLogo from "../img/typeScript-logo.png"
 import mysqlLogo from "../img/mysql-logo.png";
-import htmlLogo from "../img/html-logo.png";
-import cssLogo from "../img/css-logo.png";
 import astroLogo from "../img/astro-logo.png";
 import tailwindLogo from "../img/tailwindcss-logo.png";
 import reactLogo from "../img/reactjs-logo.png";
@@ -17,12 +15,12 @@ import googleSearchConsoleLogo from "../img/google-search-console-logo.png";
 import googleAnalyticsLogo from "../img/google-analytics-logo.png";
 import googleAdsense from "../img/google-adsense-logo.png";
 
-
 import hackathonCloudinary from "../img/hackathon_cloudinary.png";
 import bienesRaices from "../img/bienes_raices.png";
 import peluqueriaEma from "../img/peluqueria_ema.png";
 import landingPages from "../img/landing_pages.png";
 import amazonReferidos from "../img/amazon_referidos.png";
+import blogGoogle from "../img/blog-google.png";
 ---
 
 <div class="pt-20" id="projects">
@@ -30,10 +28,19 @@ import amazonReferidos from "../img/amazon_referidos.png";
 
     <div class="flex flex-wrap justify-center gap-10">
         <CardProjects 
+            imgProject={blogGoogle}
+            title="Blog Hola Entrepreneurs 2024"
+            description="I created a blog to share content from Google talks because they’re very interesting, and I’d like more people to learn from them. I only share my own summaries."
+            technologies={[astroLogo, tailwindLogo]}
+            linkProject="https://virtual-session-google-blog.vercel.app/"
+            linkRepository="https://github.com/KarimBiscaiburo/virtual-session-google-blog"
+        />
+
+        <CardProjects 
             imgProject={hackathonCloudinary}
             title="Cloudinary Hackathon 2024"
             description='Its a Halloween-themed "Argentinian" game where, using Cloudinarys AI-powered image editing services, you can customize the game environment. The goal is to collect as many candies as possible to advance as far as you can.'
-            technologies={[nextLogo, cssLogo, typescriptLogo]}
+            technologies={[nextLogo, typescriptLogo]}
             linkProject="https://cloudinary-hackaton-2024.vercel.app/"
             linkRepository="https://github.com/KarimBiscaiburo/cloudinary-hackaton-2024"
         />
@@ -53,13 +60,12 @@ import amazonReferidos from "../img/amazon_referidos.png";
             technologies={[reactLogo, mysqlLogo, sassLogo, javascriptLogo, nodeLogo]}
             linkRepository="https://github.com/KarimBiscaiburo/Bienes-Raices-CRUD"
         />
-
         
         <CardProjects
             imgProject={landingPages} 
             title="Landing Page Designs"
             description="Create templates in order to put my knowledge into practice and experiment with new ways of doing things by developing possible templates that can be put to real use."
-            technologies={[htmlLogo, cssLogo, astroLogo, tailwindLogo]}
+            technologies={[astroLogo, tailwindLogo]}
             linkRepository="https://github.com/KarimBiscaiburo/Landing-Pages"
         />
         
