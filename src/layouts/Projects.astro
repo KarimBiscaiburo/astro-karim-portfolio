@@ -21,12 +21,22 @@ import peluqueriaEma from "../img/peluqueria_ema.png";
 import landingPages from "../img/landing_pages.png";
 import amazonReferidos from "../img/amazon_referidos.png";
 import blogGoogle from "../img/blog-google.png";
+import customerScoops from "../img/customerScoops.png";
 ---
 
 <div class="pt-20" id="projects">
     <h2 class="text-4xl md:text-5xl font-bold text-center mb-20">Projects</h2>
 
     <div class="flex flex-wrap justify-center gap-10">
+        <CardProjects 
+            imgProject={customerScoops}
+            title="Customer Scoops - Technical Test"
+            description="As part of a selection process, I created a page with a form, using styled-components, BEM methodology, reusable components, and a small script to send emails with Resend."
+            technologies={[reactLogo, typescriptLogo]}
+            linkProject="https://prueba-tecnica-customer-scoops.vercel.app/"
+            linkRepository="https://github.com/KarimBiscaiburo/prueba-tecnica-customer-scoops"
+        />
+
         <CardProjects 
             imgProject={blogGoogle}
             title="Blog Hola Entrepreneurs 2024"
