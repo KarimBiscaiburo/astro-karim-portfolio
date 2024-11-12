@@ -1,6 +1,8 @@
 ---
 import CardProjects from "../components/CardProjects.astro";
 
+import htmlLogo from "../img/html-logo.png";
+import cssLogo from "../img/css-logo.png";
 import nextLogo from "../img/nextjs-logo.png";
 import sassLogo from "../img/sass-logo.png";
 import javascriptLogo from "../img/javascript-logo.png";
@@ -54,6 +56,14 @@ import customerScoops from "../img/customerScoops.png";
             linkProject="https://cloudinary-hackaton-2024.vercel.app/"
             linkRepository="https://github.com/KarimBiscaiburo/cloudinary-hackaton-2024"
         />
+
+        <CardProjects
+            imgProject={landingPages} 
+            title="Landing Page Designs"
+            description="Create templates in order to put my knowledge into practice and experiment with new ways of doing things by developing possible templates that can be put to real use."
+            technologies={[htmlLogo, cssLogo]}
+            linkRepository="https://github.com/KarimBiscaiburo/Landing-Pages"
+        />
          
         <CardProjects 
             imgProject={peluqueriaEma}
@@ -69,14 +79,6 @@ import customerScoops from "../img/customerScoops.png";
             description="A website with an administrative panel for managing properties for sale. A project made from one of the courses but adapted to other technologies to add more difficulty."
             technologies={[reactLogo, mysqlLogo, sassLogo, javascriptLogo, nodeLogo]}
             linkRepository="https://github.com/KarimBiscaiburo/Bienes-Raices-CRUD"
-        />
-        
-        <CardProjects
-            imgProject={landingPages} 
-            title="Landing Page Designs"
-            description="Create templates in order to put my knowledge into practice and experiment with new ways of doing things by developing possible templates that can be put to real use."
-            technologies={[astroLogo, tailwindLogo]}
-            linkRepository="https://github.com/KarimBiscaiburo/Landing-Pages"
         />
         
         <CardProjects 
